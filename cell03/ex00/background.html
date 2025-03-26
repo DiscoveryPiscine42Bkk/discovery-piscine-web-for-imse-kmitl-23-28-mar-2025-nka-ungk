@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+
+    <button onclick="changeBg()">Click me!</button>
+    <script>
+        const changeBg = () => {
+            let newColor = "#" +Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = newColor;
+        };
+    </script>
+</body>
+</html>
